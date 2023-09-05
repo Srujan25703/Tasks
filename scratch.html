@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+    <title>Hoverable Navbar</title>
+    <style>
+      ul {
+        position: fixed;
+        left: -200px;
+        top: 0;
+        width: 200px;
+        overflow-x: hidden;
+        padding-top: 20px;
+        transition: left 0.3s ease;
+      }
+
+      li {
+        list-style-type: none;
+        padding: 0;
+      }
+      .one a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #fff;
+        transition: background-color 0.3s ease;
+      }
+      ul:hover {
+        left: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li style="background-color: rgb(51, 192, 51)" class="one">
+          <a href="#">Home</a>
+        </li>
+        <br />
+        <li style="background-color: rgb(74, 203, 218)" class="one">
+          <a href="#">About</a>
+        </li>
+        <br />
+        <li style="background-color: rgb(227, 47, 47)" class="one">
+          <a href="#">Services</a>
+        </li>
+        <br />
+        <li style="background-color: blue" class="one">
+          <a href="#">Contact</a>
+        </li>
+        <br />
+      </ul>
+    </div>
+  </body>
+</html>
